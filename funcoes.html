@@ -10,11 +10,17 @@
 
         function calculaAreaTerreno(largura, altura)
         {
+            largura = parseFloat(largura);
+            comprimento = parseFloat (comprimento);
+
             area = largura * altura;
             return area;
         }
 
-        document.write("O terreno possui "+calculaAreaTerreno (15,25));
+
+
+        var areaTerreno = calculaAreaTerreno(15,25);
+        document.write("O terreno possui "+ areaTerreno + " metros quadrados");
 
   
 
